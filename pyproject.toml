@@ -139,3 +139,4 @@ dummy-variable-rgx = "^(_+|(_+[a-zA-Z0-9_]*[a-zA-Z0-9]+?))$"
 mccabe.max-complexity = 49
 
 [tool.ruff.lint.per-file-ignores]
+"Python_Changes_Per_Version.ipynb" = ["S101"] # Allow assert
