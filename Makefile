@@ -24,6 +24,11 @@ format: ## Perform ruff formatting
 lint: ## Perform ruff linting
 	@uv run ruff check --fix
 
+.PHONY: jlab
+jlab: ## Start Jupyter Lab
+	@echo "🚀 Launching JupyterLab. Navigate to http://localhost:8888/lab"
+	@uv run jupyter-lab
+
 .PHONY: help
 help:
 	@uv run python -c "import re; \
